@@ -1,0 +1,18 @@
+(in /home/administrator/railsprojects/Uploadify-with-Paperclip-on-Rails-example)
+       root        /                                  {:controller=>"users", :action=>"index"}
+    uploads GET    /uploads(.:format)                 {:controller=>"uploads", :action=>"index"}
+            POST   /uploads(.:format)                 {:controller=>"uploads", :action=>"create"}
+ new_upload GET    /uploads/new(.:format)             {:controller=>"uploads", :action=>"new"}
+edit_upload GET    /uploads/:id/edit(.:format)        {:controller=>"uploads", :action=>"edit"}
+     upload GET    /uploads/:id(.:format)             {:controller=>"uploads", :action=>"show"}
+            PUT    /uploads/:id(.:format)             {:controller=>"uploads", :action=>"update"}
+            DELETE /uploads/:id(.:format)             {:controller=>"uploads", :action=>"destroy"}
+      users GET    /users(.:format)                   {:controller=>"users", :action=>"index"}
+            POST   /users(.:format)                   {:controller=>"users", :action=>"create"}
+   new_user GET    /users/new(.:format)               {:controller=>"users", :action=>"new"}
+  edit_user GET    /users/:id/edit(.:format)          {:controller=>"users", :action=>"edit"}
+       user GET    /users/:id(.:format)               {:controller=>"users", :action=>"show"}
+            PUT    /users/:id(.:format)               {:controller=>"users", :action=>"update"}
+            DELETE /users/:id(.:format)               {:controller=>"users", :action=>"destroy"}
+                   /:controller/:action/:id           
+                   /:controller/:action/:id(.:format) 
